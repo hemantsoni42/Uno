@@ -1,34 +1,25 @@
----
-name: Documentation Update
-about: Describe this documentation issue
-title: ''
-labels: documentation
-assignees: ''
+## Description
 
----
+Please provide a clear and concise description of the documentation changes you are proposing.
 
-name: Documentation Update
-on: push
+## Reason
 
-jobs:
-  update_docs:
-    runs-on: ubuntu-latest
+Why do you believe these changes are necessary? What problem are you trying to solve?
 
-    steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
+## Proposed Changes
 
-    - name: Install dependencies
-      run: |
-        sudo apt-get update
-        sudo apt-get install -y <dependency 1> <dependency 2>
+- List the specific changes you are proposing
+- Explain how these changes will improve the documentation
 
-    - name: Build documentation
-      run: |
-        cd docs
-        make html
+## Additional Information
 
-    - name: Deploy documentation
-      uses: <deployment action>
-      with:
-        args: <deployment arguments>
+- Provide any additional information or context that will help review and understand your proposal
+- If there are screenshots, images or code snippets, please add them as well
+
+## Impact
+
+What is the expected impact of these changes on users and stakeholders?
+
+## Reviewers
+
+Please mention the people or teams who should review and approve this proposal and if you don't know the owner or team leave it blank.
